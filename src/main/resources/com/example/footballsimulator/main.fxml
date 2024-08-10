@@ -6,36 +6,36 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.footballsimulator.ControllerMain">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.footballsimulator.ControllerMain">
    <children>
-      <Button layoutX="225.0" layoutY="88.0" mnemonicParsing="false" onAction="#new_clicked" prefHeight="36.0" prefWidth="150.0" text="NEW SIMULATION" textAlignment="CENTER">
+      <Button layoutX="604.0" layoutY="240.0" mnemonicParsing="false" onAction="#new_clicked" prefHeight="120.0" prefWidth="650.0" text="NEW SIMULATION" textAlignment="CENTER">
          <font>
             <Font name="Verdana" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="225.0" layoutY="139.0" mnemonicParsing="false" onAction="#continue_clicked" prefHeight="36.0" prefWidth="150.0" text="CONTINUE" textAlignment="CENTER">
+      <Button layoutX="604.0" layoutY="380.0" mnemonicParsing="false" onAction="#continue_clicked" prefHeight="120.0" prefWidth="650.0" text="CONTINUE" textAlignment="CENTER">
          <font>
             <Font name="Verdana" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="225.0" layoutY="191.0" mnemonicParsing="false" onAction="#load_clicked" prefHeight="36.0" prefWidth="150.0" text="LOAD SIMULATION" textAlignment="CENTER">
+      <Button layoutX="604.0" layoutY="520.0" mnemonicParsing="false" onAction="#load_clicked" prefHeight="120.0" prefWidth="650.0" text="LOAD SIMULATION" textAlignment="CENTER">
          <font>
             <Font name="Verdana" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="225.0" layoutY="240.0" mnemonicParsing="false" onAction="#edit_clicked" prefHeight="36.0" prefWidth="150.0" text="EDIT TEAMS" textAlignment="CENTER">
+      <Button layoutX="604.0" layoutY="660.0" mnemonicParsing="false" onAction="#edit_clicked" prefHeight="120.0" prefWidth="650.0" text="EDIT TEAMS" textAlignment="CENTER">
          <font>
             <Font name="Verdana" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="225.0" layoutY="293.0" mnemonicParsing="false" onAction="#exit_clicked" prefHeight="36.0" prefWidth="150.0" text="EXIT" textAlignment="CENTER">
+      <Button layoutX="604.0" layoutY="800.0" mnemonicParsing="false" onAction="#exit_clicked" prefHeight="120.0" prefWidth="650.0" text="EXIT" textAlignment="CENTER">
          <font>
             <Font name="Verdana" size="13.0" />
          </font>
       </Button>
-      <Label layoutX="195.0" layoutY="38.0" text="FOOTBALL SIMULATOR">
+      <Label layoutX="557.0" layoutY="126.0" text="FOOTBALL SIMULATOR">
          <font>
-            <Font name="Verdana" size="18.0" />
+            <Font name="Verdana" size="64.0" />
          </font>
       </Label>
       <VBox prefHeight="200.0" prefWidth="100.0" />
