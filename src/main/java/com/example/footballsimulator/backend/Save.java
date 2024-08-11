@@ -3,6 +3,8 @@ package com.example.footballsimulator.backend;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -23,16 +25,23 @@ public class Save {
         save_index = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HHmmssddMMyyyy"));
         File directory = new File(save_index);
         if (!directory.exists()) directory.mkdir();
-        //create_database();
+        create_database();
     }
 
     private void create_database(){
-        try (Connection connection = DriverManager.getConnection("jdbc:sqlite:"+save_index+".db")){
+        /*try (Connection connection = DriverManager.getConnection("jdbc:sqlite:"+save_index+File.separator+save_index+".db")){
             if(connection != null){
                 DatabaseMetaData meta = connection.getMetaData();
             }
         } catch (SQLException e) {
             int z = 1;
+        }*/
+        File source = new File("C:/Users/kuba/IdeaProjects/footballsimulator/databases/default.db");
+        File dest = new File("C:/Users/kuba/IdeaProjects/footballsimulator/"+save_index+File.separator+save_index+".db");
+        try{
+            Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e){
+            e.printStackTrace();
         }
     }
 

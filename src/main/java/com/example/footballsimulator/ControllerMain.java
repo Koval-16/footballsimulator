@@ -1,6 +1,7 @@
 package com.example.footballsimulator;
 
 import com.example.footballsimulator.backend.Save;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +23,7 @@ public class ControllerMain {
     @FXML
     private void new_clicked(ActionEvent event) throws IOException {
         Save save = new Save();
-        //save.new_save();
+        save.new_save();
         Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -45,6 +46,6 @@ public class ControllerMain {
 
     @FXML
     private void exit_clicked(){
-
+        Platform.exit();
     }
 }
