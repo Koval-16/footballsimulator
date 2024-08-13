@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09075d71-09d2-4e94-9918-5cb93fb26bfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Date.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databases/default.db" beforeDir="false" afterPath="$PROJECT_DIR$/databases/default.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/ControllerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/ControllerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/ControllerDashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Save.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/footballsimulator/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/footballsimulator/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +94,24 @@
       <workItem from="1723041217488" duration="651000" />
       <workItem from="1723043117319" duration="5199000" />
       <workItem from="1723273309419" duration="7873000" />
-      <workItem from="1723372609487" duration="3498000" />
+      <workItem from="1723372609487" duration="3650000" />
+      <workItem from="1723472459177" duration="612000" />
+      <workItem from="1723558408669" duration="2151000" />
+      <workItem from="1723565538309" duration="1519000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

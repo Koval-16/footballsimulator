@@ -1,5 +1,6 @@
 package com.example.footballsimulator;
 
+import com.example.footballsimulator.backend.MainBackend;
 import com.example.footballsimulator.backend.Save;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -22,8 +23,9 @@ public class ControllerMain {
 
     @FXML
     private void new_clicked(ActionEvent event) throws IOException {
-        Save save = new Save();
-        save.new_save();
+        MainBackend.save.new_save();
+        MainBackend.teamList.load_teams();
+        MainBackend.teamList.printing();
         Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);

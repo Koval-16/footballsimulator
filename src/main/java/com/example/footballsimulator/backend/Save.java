@@ -48,4 +48,8 @@ public class Save {
     public void load_save(){
     }
 
+    public String getSave_index(){
+        return save_index;
+    }
+
 }
