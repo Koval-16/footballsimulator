@@ -15,41 +15,32 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.DatabaseMetaData;
+import java.util.ArrayList;
 
 
 public class Save {
 
     private String save_index;
+    private String last_modified;
+    public Date in_game_date = new Date();
+    private boolean most_recent;
 
-    public void new_save(){
-        save_index = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HHmmssddMMyyyy"));
-        File directory = new File(save_index);
-        if (!directory.exists()) directory.mkdir();
-        create_database();
+    public Save(String save_index, String last_modified, int year, int month, int day, boolean most_recent){
+        this.save_index = save_index;
+        this.last_modified = last_modified;
+        in_game_date.year = year;
+        in_game_date.month = month;
+        in_game_date.gameday = day;
+        this.most_recent = most_recent;
     }
 
-    private void create_database(){
-        /*try (Connection connection = DriverManager.getConnection("jdbc:sqlite:"+save_index+File.separator+save_index+".db")){
-            if(connection != null){
-                DatabaseMetaData meta = connection.getMetaData();
-            }
-        } catch (SQLException e) {
-            int z = 1;
-        }*/
-        File source = new File("C:/Users/kuba/IdeaProjects/footballsimulator/databases/default.db");
-        File dest = new File("C:/Users/kuba/IdeaProjects/footballsimulator/"+save_index+File.separator+save_index+".db");
-        try{
-            Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-    }
-
-    public void load_save(){
-    }
 
     public String getSave_index(){
         return save_index;
+    }
+
+    public void setSave_index(String save_index){
+        this.save_index = save_index;
     }
 
 }

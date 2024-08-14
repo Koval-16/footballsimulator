@@ -3,6 +3,6 @@ package com.example.footballsimulator.backend;
 import java.util.ArrayList;
 
 public class MainBackend {
-    public static Save save = new Save();
+    public static SaveManager saveManager = new SaveManager();
     public static TeamList teamList = new TeamList();
 }

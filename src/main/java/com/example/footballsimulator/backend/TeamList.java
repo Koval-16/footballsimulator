@@ -10,10 +10,8 @@ import java.util.List;
 
 public class TeamList {
     ArrayList<Team> teams = new ArrayList<>();
-    String path = "C:/Users/kuba/IdeaProjects/footballsimulator/"+MainBackend.save.getSave_index()+ File.separator+MainBackend.save.getSave_index()+".db";
-
     public void load_teams(){
-        String path = "jdbc:sqlite:C:/Users/kuba/IdeaProjects/footballsimulator/"+MainBackend.save.getSave_index()+ File.separator+MainBackend.save.getSave_index()+".db";
+        String path = "jdbc:sqlite:C:/Users/kuba/IdeaProjects/footballsimulator/"+MainBackend.saveManager.used_save.getSave_index()+ File.separator+MainBackend.saveManager.used_save.getSave_index()+".db";
         String query = "SELECT * FROM teams";
         try (Connection connection = DriverManager.getConnection(path);
              Statement stmt = connection.createStatement();
