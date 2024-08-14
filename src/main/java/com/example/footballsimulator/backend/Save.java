@@ -43,4 +43,7 @@ public class Save {
         this.save_index = save_index;
     }
 
+    public boolean isMost_recent(){
+        return most_recent;
+    }
 }
