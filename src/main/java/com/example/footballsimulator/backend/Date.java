@@ -1,9 +1,9 @@
 package com.example.footballsimulator.backend;
 
 public class Date {
-    public int year = 2023;
-    public int month = 1;
-    public int gameday = 1;
+    public int year;
+    public int month;
+    public int gameday;
 
     public void progress_date(){
         if(gameday!=7) gameday++;
