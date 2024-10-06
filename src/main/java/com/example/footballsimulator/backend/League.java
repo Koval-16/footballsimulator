@@ -1,13 +1,22 @@
 package com.example.footballsimulator.backend;
 
-public class League {
-    private int id;
-    private String name;
-    private int teams;
+// Ta klasa trzyma faktyczny sezon ligowy, np. Premier League 2025
 
-    public League(int id, String name, int teams){
-        this.id = id;
-        this.name = name;
-        this.teams = teams;
+import java.util.ArrayList;
+
+public class League {
+    private LeagueDefault league;
+    private int season_year;
+    public ArrayList<Team> teams = new ArrayList<>();
+
+    public League(LeagueDefault league, int season_year){
+        this.league = league;
+        this.season_year = season_year;
+    }
+
+
+
+    public LeagueDefault getLeague(){
+        return league;
     }
 }

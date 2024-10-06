@@ -15,6 +15,7 @@ public class Date {
         else{
             gameday = 1;
             year++;
+            MainBackend.leagueList.create_leagues();
         }
     }
 

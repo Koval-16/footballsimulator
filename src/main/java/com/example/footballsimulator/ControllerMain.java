@@ -10,10 +10,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.scene.Parent;
 
 import java.io.IOException;
 
@@ -26,7 +23,7 @@ public class ControllerMain {
     private void new_clicked(ActionEvent event) throws IOException {
         MainBackend.saveManager.new_save();
         MainBackend.teamList.load_teams();
-        MainBackend.teamList.printing();
+        MainBackend.leagueDefaultList.load_leagues();
         Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -42,7 +39,7 @@ public class ControllerMain {
             if (save.isMost_recent()){
                 MainBackend.saveManager.load_save(save);
                 MainBackend.teamList.load_teams();
-                MainBackend.teamList.printing();
+                MainBackend.leagueDefaultList.load_leagues();
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
                 Parent root = loader.load();
                 stage = (Stage)((Node)event.getSource()).getScene().getWindow();
