@@ -6,9 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="09075d71-09d2-4e94-9918-5cb93fb26bfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databases/default.db" beforeDir="false" afterPath="$PROJECT_DIR$/databases/default.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/databases/info.db" beforeDir="false" afterPath="$PROJECT_DIR$/databases/info.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/ControllerDashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/ControllerDashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/SaveManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/SaveManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/TeamList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/footballsimulator/backend/TeamList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/footballsimulator/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/footballsimulator/dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -40,30 +48,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.footballsimulator [:HelloApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.footballsimulator [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.footballsimulator [:MainController.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.footballsimulator.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kuba/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "Gradle.footballsimulator [:HelloApplication.main()].executor": "Run",
+    "Gradle.footballsimulator [:Main.main()].executor": "Run",
+    "Gradle.footballsimulator [:MainController.main()].executor": "Run",
+    "Gradle.footballsimulator.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kuba/AppData/Local/SceneBuilder/SceneBuilder.exe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kuba\IdeaProjects\footballsimulator\src\main\resources\com\example\footballsimulator" />
@@ -99,7 +108,14 @@
       <workItem from="1723565538309" duration="1779000" />
       <workItem from="1723570101664" duration="161000" />
       <workItem from="1723643703264" duration="10301000" />
-      <workItem from="1723877184648" duration="2273000" />
+      <workItem from="1723877184648" duration="9747000" />
+      <workItem from="1723891674299" duration="3292000" />
+      <workItem from="1723962256757" duration="9960000" />
+      <workItem from="1724081066828" duration="8923000" />
+      <workItem from="1724258704532" duration="251000" />
+      <workItem from="1724335131764" duration="2614000" />
+      <workItem from="1725894299193" duration="65000" />
+      <workItem from="1728147894974" duration="5993000" />
     </task>
     <servers />
   </component>

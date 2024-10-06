@@ -12,14 +12,12 @@ public class TeamList {
     ArrayList<Team> teams = new ArrayList<>();
     public void load_teams(){
         String path = "jdbc:sqlite:C:/Users/kuba/IdeaProjects/footballsimulator/"+MainBackend.saveManager.used_save.getSave_index()+ File.separator+MainBackend.saveManager.used_save.getSave_index()+".db";
-        String query = "SELECT * FROM teams";
+        String query = "SELECT * FROM clubs";
         try (Connection connection = DriverManager.getConnection(path);
              Statement stmt = connection.createStatement();
              ResultSet rs = stmt.executeQuery(query)){
             while(rs.next()){
-                teams.add(new Team(rs.getInt("ID"),rs.getString("Name"),
-                        rs.getString("Short"),rs.getInt("Confederation"),
-                        rs.getInt("Fifa"),rs.getInt("Elo"),rs.getInt("isArab")==1));
+                teams.add(new Team(rs.getInt("id"),rs.getString("name"),rs.getInt("elo")));
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -28,7 +26,7 @@ public class TeamList {
 
     public void printing(){
         for(Team team: teams){
-            System.out.println(team.getId()+" "+team.getName()+" "+team.getFifa_ranking()+" "+team.getIs_Arab());
+            System.out.println(team.getId()+" "+team.getName()+" "+team.getElo());
         }
     }
 }
